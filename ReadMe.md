@@ -33,7 +33,9 @@ It includes a complete pipeline: from collecting your own training data to train
     cd hand-gesture-game
 2.  **Install dependencies**
     You can install the required libraries using pip:
+    ```bash
     pip install opencv-python mediapipe scikit-learn pandas numpy pillow
+    ```
     ## 🚀 How to Run
 
 Follow these three steps to get the game running perfectly on your machine.
@@ -58,11 +60,14 @@ python train.py*   This will create a `model.p` file containing the trained Rand
 Now you are ready to play. You have two versions:
 
 **Option A: Enhanced UI Version (Recommended)**
-python play2.py*   **Spacebar**: Lock in your move and play against the Computer.
-*   **Q**: Quit the game.
+```python play2.py```
+**Spacebar**: Lock in your move and play against the Computer.
+**Q**: Quit the game.
 
 **Option B: Basic Version**
-python play.py## 📂 Project Structure
+```python play.py```
+
+## 📂 Project Structure
 
 | File | Description |
 | :--- | :--- |
