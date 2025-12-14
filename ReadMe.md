@@ -31,7 +31,7 @@ It includes a complete pipeline: from collecting your own training data to train
 1.  **Clone the repository**
     git clone https://github.com/yourusername/hand-gesture-game.git
     cd hand-gesture-game
-    2.  **Install dependencies**
+2.  **Install dependencies**
     You can install the required libraries using pip:
     pip install opencv-python mediapipe scikit-learn pandas numpy pillow
     ## 🚀 How to Run
