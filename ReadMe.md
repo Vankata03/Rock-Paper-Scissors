@@ -28,12 +28,14 @@ It includes a complete pipeline: from collecting your own training data to train
 
 ## 📦 Installation
 
-1.  **Clone the repository**
-    git clone https://github.com/yourusername/hand-gesture-game.git
+1.  **Clone the repository**  
+    ``` bash
+    git clone https://github.com/Vankata03/Rock-Paper-Scissors.git
     cd hand-gesture-game
-2.  **Install dependencies**
+    ```
+3.  **Install dependencies**
     You can install the required libraries using pip:
-    ```bash
+    ``` bash
     pip install opencv-python mediapipe scikit-learn pandas numpy pillow
     ```
     ## 🚀 How to Run
@@ -43,8 +45,8 @@ Follow these three steps to get the game running perfectly on your machine.
 ### Step 1: Collect Data (Optional if model exists)
 If you want to train the model on *your* specific hand movements:
 1.  Run the data collection script:
-    python collect_data.py
-    2.  **Controls**:
+    `python collect_data.py`
+2.  **Controls**:
     - Press **`0`** to record **Rock** samples.
     - Press **`1`** to record **Scissors** samples.
     - Press **`2`** to record **Paper** samples.
@@ -52,20 +54,21 @@ If you want to train the model on *your* specific hand movements:
 3.  Try to collect at least 100-200 samples per gesture for better accuracy.
 
 ### Step 2: Train the Model
-Once `hand_data.csv` is generated (or if you use the existing one), train the AI:
-python train.py*   This will create a `model.p` file containing the trained Random Forest classifier.
-*   It usually takes just a few seconds and will output the model's accuracy (e.g., "Accuracy: 99.5%").
+1. Once `hand_data.csv` is generated (or if you use the existing one), train the AI:
+`python train.py` 
+2. This will create a `model.p` file containing the trained Random Forest classifier.
+It usually takes just a few seconds and will output the model's accuracy (e.g., "Accuracy: 99.5%").
 
 ### Step 3: Play the Game!
 Now you are ready to play. You have two versions:
 
 **Option A: Enhanced UI Version (Recommended)**
-```python play2.py```
+`python play2.py`
 **Spacebar**: Lock in your move and play against the Computer.
 **Q**: Quit the game.
 
 **Option B: Basic Version**
-```python play.py```
+`python play.py`
 
 ## 📂 Project Structure
 
